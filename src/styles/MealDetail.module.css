@@ -16,3 +16,20 @@
     margin-bottom: 1rem;
     color: #445052;
 }
+
+.instructions {
+    margin-top: 2rem;
+    color: #445052;
+}
+
+.items {
+    list-style-type: square;
+    list-style-position: outside;
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+.item li {
+    margin-bottom: 8px;
+    line-height: 25px;
+}

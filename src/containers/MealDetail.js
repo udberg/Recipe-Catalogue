@@ -92,3 +92,12 @@ const MealDetail = ({ meal: { status, meal, error }, dispatch }) => {
     </div>
   );
 };
+
+MealDetail.propTypes = {
+    meal: PropTypes.shape({
+        status: PropTypes.string.isRequired,
+        error: PropTypes.string,
+        meal: PropTypes.objectOf(PropTypes.string),
+    }).isRequired,
+    dispatch: PropTypes.func.isRequired,
+};

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test for search component snapshot 1`] = `
+<form>
+  <input
+    class="search-input"
+    name="search"
+    placeholder="Search your recipes"
+    type="search"
+  />
+</form>
+`;

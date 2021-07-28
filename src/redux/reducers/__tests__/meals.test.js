@@ -1,55 +1,57 @@
-import meal from '../meal';
+import meals from '../meals';
 import * as actionsType from '../../actions/actionTypes';
 
-describe('meal reducer', () => {
+describe('meals reducer', () => {
   let initialState;
   beforeEach(() => {
     initialState = {
-      meal: {},
-      status: actionsType.IDLE_MEAL,
+      meals: [],
+      status: actionsType.IDLE_MEALS,
       error: null,
     };
   });
 
   test('should return initial state', () => {
-    expect(meal(undefined, {})).toEqual(initialState);
+    expect(meals(undefined, {})).toEqual(initialState);
   });
 
   test('should return the loading status', () => {
     const action = {
-      type: actionsType.LOADING_MEAL,
+      type: actionsType.LOADING_MEALS,
     };
-    expect(meal(initialState, action)).toEqual({
+    expect(meals(initialState, action)).toEqual({
       ...initialState,
-      status: actionsType.LOADING_MEAL,
+      status: actionsType.LOADING_MEALS,
     });
   });
 
   test('should return the error status with error', () => {
     const action = {
-      type: actionsType.ERROR_MEAL,
+      type: actionsType.ERROR_MEALS,
       error: 'Error while fetching data.',
     };
-    expect(meal(initialState, action)).toEqual({
+    expect(meals(initialState, action)).toEqual({
       ...initialState,
-      status: actionsType.ERROR_MEAL,
+      status: actionsType.ERROR_MEALS,
       error: action.error,
     });
   });
 
-  test('should return the success status with meal', () => {
+  test('should return the success status with meals', () => {
     const action = {
-      type: actionsType.SUCCESS_MEAL,
-      data: {
-        idMeal: '123',
-        strMeal: 'Test meal',
-      },
+      type: actionsType.SUCCESS_MEALS,
+      data: [
+        {
+          idMeal: '123',
+          strMeal: 'Test meals',
+        },
+      ],
     };
-    expect(meal(initialState, action)).toEqual({
+    expect(meals(initialState, action)).toEqual({
       ...initialState,
-      status: actionsType.SUCCESS_MEAL,
+      status: actionsType.SUCCESS_MEALS,
       error: null,
-      meal: action.data,
+      meals: action.data,
     });
   });
 });

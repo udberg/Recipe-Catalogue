@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import { connect } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchMealById } from '../redux/actions/thunk';
-import * as actionsType from '../redux/actions/actionTypes';
+import * as actionsType from '../redux/actions/actionsTypes';
 import card from '../styles/card.css';
 import styles from '../styles/MealDetail.module.css';
 
@@ -69,7 +69,7 @@ const MealDetail = ({ meal: { status, meal, error }, dispatch }) => {
     return instructions;
   };
 
-   return (
+  return (
     <div>
       <div className={cx('card-detail')}>
         <img className={cx('card-img')} src={meal.strMealThumb} alt={meal.strMeal} />

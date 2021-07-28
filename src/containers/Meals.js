@@ -58,3 +58,8 @@ Meals.propTypes = {
     fetchMealsByCategory: PropTypes.func.isRequired,
 };
 
+const mapStateToProps = (state) => ({
+    meals: state.meals,
+    category: state.category,
+});
+

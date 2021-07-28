@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import { connect } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchMealById } from '../redux/actions/thunk';
-import * as actionsType from '../redux/actions/actionsTypes';
+import * as actionsType from '../redux/actions/actionTypes';
 import card from '../styles/card.css';
 import styles from '../styles/MealDetail.module.css';
 

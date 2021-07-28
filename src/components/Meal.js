@@ -15,8 +15,8 @@ const Meal = ({ meal }) => (
           <span>Serves</span>
           <span className={cx(styles['bold-info'])}>5</span>
           <span className={cx(styles.divider)}>|</span>
-          <span>Preparation time</span>
-          <span className={cx(styles['bold-info'])}>20 minutes</span>
+          <span>Prep time</span>
+          <span className={cx(styles['bold-info'])}>20 mins</span>
         </p>
         <h3 className={cx('card-title')}>
           {meal.strMeal}

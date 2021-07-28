@@ -44,22 +44,28 @@ const Meals = ({
 };
 
 Meals.defaultProps = {
-    category: 'Beef',
+  category: 'Beef',
 };
 
 Meals.propTypes = {
-    meals: PropTypes.shape({
-        status: PropTypes.string.isRequired,
-        error: PropTypes.string,
-        meals: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)),
-    }).isRequired,
-    category: PropTypes.string,
-    changeCategory: PropTypes.func.isRequired,
-    fetchMealsByCategory: PropTypes.func.isRequired,
+  meals: PropTypes.shape({
+    status: PropTypes.string.isRequired,
+    error: PropTypes.string,
+    meals: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)),
+  }).isRequired,
+  category: PropTypes.string,
+  changeCategory: PropTypes.func.isRequired,
+  fetchMealsByCategory: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = (state) => ({
-    meals: state.meals,
-    category: state.category,
+  meals: state.meals,
+  category: state.category,
 });
 
+const mapDispatchToProps = (dispatch) => ({
+  changeCategory: (category) => dispatch(changeCategory(category)),
+  fetchMealsByCategory: (category) => dispatch(fetchMealsByCategory(category)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Meals);

@@ -26,7 +26,7 @@ Recipe Catalogue is a React &amp; Redux web app based on a catalog of recipes. I
 
  ## Screenshot
 
-![img](../public/mockup.png)
+![img](./public/mockup.png)
 
 ## Built With 🛠
 

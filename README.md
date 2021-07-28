@@ -13,6 +13,7 @@ Recipe Catalogue is a React & Redux web app based on a catalog of recipes. It co
 | --------------------------- |
 
 | [Live Demo](#live-demo)     |
+| [Video Presentation](#video-presentation)     |
 | [Screenshot](#screenshot)   |
 | [Built With](#built-with-🛠) |
 | [Getting Started](#getting-started-🛠) |
@@ -23,6 +24,10 @@ Recipe Catalogue is a React & Redux web app based on a catalog of recipes. It co
 ## Live Demo
 
 [Recipe-Catalogue](https://recipecatalogue.netlify.app/)
+
+## Video Presentation
+
+[Loom Video](https://www.loom.com/share/d0996f227a6a46d8b425b32796bfa86c)
 
  ## Screenshot
 

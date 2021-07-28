@@ -27,3 +27,16 @@ const searchMeals = (query) => async (dispatch) => {
     return dispatch(errorMeals('Error while fetching data.'));
   }
 };
+
+const fetchMealById = (id) => async (dispatch) => {
+  dispatch(loadingMeal());
+  const response = fetchMeal(id);
+  try {
+    const data = await response;
+    return dispatch(successMeal(data.meals[0]));
+  } catch (e) {
+    return dispatch(errorMeal('Error while fetching data.'));
+  }
+};
+
+export { fetchMealsByCategory, searchMeals, fetchMealById };

@@ -42,3 +42,19 @@ const Meals = ({
     </div>
   );
 };
+
+Meals.defaultProps = {
+    category: 'Beef',
+};
+
+Meals.propTypes = {
+    meals: PropTypes.shape({
+        status: PropTypes.string.isRequired,
+        error: PropTypes.string,
+        meals: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)),
+    }).isRequired,
+    category: PropTypes.string,
+    changeCategory: PropTypes.func.isRequired,
+    fetchMealsByCategory: PropTypes.func.isRequired,
+};
+

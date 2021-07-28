@@ -13,3 +13,17 @@ const fetchMealsByCategory = (category) => async (dispatch) => {
     return dispatch(errorMeals('Error while fetching data.'));
   }
 };
+
+const searchMeals = (query) => async (dispatch) => {
+  dispatch(loadingMeals());
+  const response = fetchSearchMeals(query);
+  try {
+    const data = await response;
+    if (data.meals) {
+      return dispatch(successMeals(data.meals));
+    }
+    return dispatch(errorMeals(`There is no meal with name: ${query}`));
+  } catch (e) {
+    return dispatch(errorMeals('Error while fetching data.'));
+  }
+};

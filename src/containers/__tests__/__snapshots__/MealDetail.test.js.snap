@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test meal after action is dispatched 1`] = `
+<div>
+  <div
+    class="card-detail"
+  >
+    <img
+      alt="Testing meal"
+      class="card-img"
+    />
+    <div>
+      <h3
+        class="card-title"
+      >
+        Testing meal
+      </h3>
+      <div
+        class="ingredients"
+      >
+        <h4
+          class="heading"
+        >
+          Ingredients
+        </h4>
+        <ul
+          class="listItem"
+        />
+      </div>
+      <div
+        class="instructions"
+      >
+        <h4
+          class="heading"
+        >
+          Instructions
+        </h4>
+        <div
+          class="instructions"
+          data-testid="meal-description"
+        >
+          <ul
+            class="items"
+          >
+            <li>
+              This is an instructions for a meal.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

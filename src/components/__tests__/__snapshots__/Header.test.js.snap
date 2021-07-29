@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the snapshot 1`] = `
+<nav
+  class="nav"
+>
+  <ul
+    class="menus"
+  >
+    <li
+      class="menu__item"
+    >
+      <a
+        class="menu__link"
+        href="/"
+      >
+        Home
+      </a>
+    </li>
+    <li
+      class="menu__item"
+    >
+      <a
+        class="menu__link"
+        href="/categories"
+      >
+        Categories
+      </a>
+    </li>
+  </ul>
+  <div
+    class="menu__search"
+  >
+    <form>
+      <input
+        class="search-input"
+        name="search"
+        placeholder="Search your recipes"
+        type="search"
+      />
+    </form>
+  </div>
+</nav>
+`;

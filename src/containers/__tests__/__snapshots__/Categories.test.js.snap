@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the snapshot 1`] = `
+<div>
+  <div
+    class="grid grid-column grid-gap-1/5"
+  >
+    <div
+      class="card"
+    >
+      <a
+        class="card-link"
+        href="/meals/Beef"
+      >
+        <img
+          alt="Beef"
+          class="card-img"
+          src="https://www.themealdb.com/images/category/beef.png"
+        />
+        <div
+          class="card-body"
+        >
+          <h3
+            class="card-title"
+          >
+            Beef
+          </h3>
+        </div>
+      </a>
+    </div>
+    <div
+      class="card"
+    >
+      <a
+        class="card-link"
+        href="/meals/Chicken"
+      >
+        <img
+          alt="Chicken"
+          class="card-img"
+          src="https://www.themealdb.com/images/category/chicken.png"
+        />
+        <div
+          class="card-body"
+        >
+          <h3
+            class="card-title"
+          >
+            Chicken
+          </h3>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;

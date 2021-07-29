@@ -1,0 +1,35 @@
+.ingredients {
+  margin-top: 10px;
+}
+
+.heading {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.listItem {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+  color: #445052;
+}
+
+.instructions {
+  margin-top: 2rem;
+  color: #445052;
+}
+
+.items {
+  list-style-type: square;
+  list-style-position: outside;
+  font-size: 13pt;
+  margin-left: 20px;
+}
+
+.items li {
+  margin-bottom: 8px;
+  line-height: 25px;
+}

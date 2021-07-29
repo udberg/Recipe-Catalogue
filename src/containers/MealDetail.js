@@ -103,7 +103,7 @@ MealDetail.propTypes = {
 };
 
 const mapStateToProps = (state) => ({
-  meal: meal.state,
+  meal: state.meal,
 });
 
 export default connect(mapStateToProps)(MealDetail);
